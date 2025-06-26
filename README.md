@@ -1,4 +1,4 @@
-# ☁️ Accurate Weather App (PyQt5)
+# ☁️ Weather App (PyQt5)
 
 A sleek and accurate weather app built with PyQt5 that fetches real-time weather data based on city name input using the OpenWeatherMap API.
 
