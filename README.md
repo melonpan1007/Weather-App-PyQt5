@@ -40,7 +40,7 @@ A simple and elegant desktop weather app built using **Python** and **PyQt5**. I
 First, clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/accurate-weather-app.git
+git clone https://github.com/melonpan1007/weather-app.git
 cd accurate-weather-app
 ````
 
