@@ -1,6 +1,17 @@
-# 🌦️  Weather App (PyQt5 + OpenWeatherMap)
+# ☁️ Accurate Weather App (PyQt5)
 
-A simple and elegant desktop weather app built using **Python** and **PyQt5**. It allows users to enter a city name and get the **current temperature**, **weather description**, and a **matching icon**, all powered by the **OpenWeatherMap API**.
+A sleek and accurate weather app built with PyQt5 that fetches real-time weather data based on city name input using the OpenWeatherMap API.
+
+## 🚀 Features
+
+- 🌍 Search any city and get real-time weather updates.
+- 🌡️ Displays current temperature in Celsius.
+- 🌥️ Shows weather condition with appropriate emoji.
+- 🔄 Handles a wide range of errors with specific messages:
+  - Invalid city names (e.g., typos like `mumabi`)
+  - Empty input field
+  - API errors (invalid key, rate limit, etc.)
+  - Server or connection issues
 
 ---
 
@@ -12,36 +23,13 @@ A simple and elegant desktop weather app built using **Python** and **PyQt5**. I
 ### ❌ Error Handling (invalid city):
 ![error_screenshot png](https://github.com/user-attachments/assets/fba6704d-fa72-452f-8275-bf679d8b117f)
 
-
-
----
-
-## 🔧 Features
-
-✅ Search by city name  
-✅ Displays current temperature in Celsius  
-✅ Shows weather description and icon  
-✅ Error handling for invalid city names  
-✅ Clean and minimal GUI with PyQt5
-
----
-
-## 🧰 Tech Stack
-
-- Python
-- PyQt5
-- OpenWeatherMap API
-- Requests module
-
----
-
 ## 📦 Installation
 
 First, clone the repository:
 
 ```bash
-git clone https://github.com/melonpan1007/weather-app.git
-cd accurate-weather-app
+git clone https://github.com/melonpan1007/Weather-App-PyQt5.git
+cd Weather-App-PyQt5
 ````
 
 Then, install the required packages:
@@ -50,23 +38,19 @@ Then, install the required packages:
 pip install -r requirements.txt
 ```
 
+> Make sure Python 3 and `pip` are installed on your system.
+
 ---
 
-## 🔑 Get Your API Key
+## ▶️ Running the App
 
-1. Go to [https://openweathermap.org/](https://openweathermap.org/)
-2. Create a free account
-3. Go to the **API keys** section in your dashboard
-4. Copy your key
-5. Replace `"your_api_key_here"` in the code with your actual API key:
+Replace the API key in `weather_app.py`:
 
 ```python
-API_KEY = "your_api_key_here"
+api_key = "YOUR_API_KEY_HERE"
 ```
 
----
-
-## 🚀 Run the App
+Then run the app using:
 
 ```bash
 python weather_app.py
@@ -74,43 +58,55 @@ python weather_app.py
 
 ---
 
-## 📝 Example Usage
-
-* Input: `mumbai`
-* Output:
-
-  * 🌡️ Temperature: `28°C`
-  * ☁️ Description: `Overcast clouds`
-  * 📷 Weather icon
-
----
-
 ## ❗ Notes
 
-* Make sure your API key is active (sometimes it takes a few hours after creation).
-* Spelling matters! The app will show `"City not found"` if there's a typo like `"mumabi"` instead of `"mumbai"`.
-* Accuracy may vary slightly based on OpenWeatherMap's real-time data refresh rate.
+* 🔑 **API Key Required**: This app uses the free [OpenWeatherMap API](https://openweathermap.org/api). Sign up, get your API key, and paste it in the script.
+* ⌛ Activation Delay: Your API key may take a few minutes to go live after creation.
+* 📝 Input Matters: Spelling errors (e.g., `mumabi` instead of `mumbai`) will return a "City not found" message.
+* 📊 Accuracy: Data is fetched directly from OpenWeatherMap’s live weather feed and may slightly vary depending on refresh cycles.
+
+> 🛡️ The code includes detailed error handling using `match-case` and exception blocks to help users understand exactly what went wrong. From server errors to invalid input — you’re covered!
 
 ---
 
-## 📁 Project Structure
+## 📁 File Structure
 
 ```
-accurate-weather-app/
+Weather-App-PyQt5/
 │
-├── weather_app.py
-├── README.md
-├── requirements.txt
-└── screenshot.png
+├── weather_app.py          # Main Python app
+├── requirements.txt        # Required Python packages
+├── screenshots/
+│   ├── success_ui.png      # Screenshot showing correct weather
+│   └── error_ui.png        # Screenshot showing error handling
+└── README.md
 ```
 
 ---
 
-## 📃 License
+## 🧠 Technologies Used
 
-This project is open-source and available under the [MIT License](LICENSE).
+* Python 3
+* PyQt5
+* OpenWeatherMap API
+* Requests
 
+---
 
+## 📄 License
 
+This project is licensed under the [MIT License](LICENSE).
 
+---
 
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 👤 Author
+
+Made with ❤️ by [melonpan1007](https://github.com/melonpan1007)
+
+````
