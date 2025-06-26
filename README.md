@@ -7,10 +7,10 @@ A simple and elegant desktop weather app built using **Python** and **PyQt5**. I
 ## 🖼️ Preview
 
 ### ✅ Working Example:
-(![screenshot png](https://github.com/user-attachments/assets/ab12b8fb-e5bf-4547-843f-957133d96277))
+![screenshot png](https://github.com/user-attachments/assets/ab12b8fb-e5bf-4547-843f-957133d96277)
 
 ### ❌ Error Handling (invalid city):
-(![error_screenshot png](https://github.com/user-attachments/assets/fba6704d-fa72-452f-8275-bf679d8b117f))
+![error_screenshot png](https://github.com/user-attachments/assets/fba6704d-fa72-452f-8275-bf679d8b117f)
 
 
 
